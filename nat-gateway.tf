@@ -1,5 +1,6 @@
 # allocate elastic ip. this eip will be used for the nat-gateway in the public subnet az1 
 #terraform aws allocate elastic ip
+/*
 resource "aws_eip" "eip_for_nat_gateway_az1" {
   vpc = true
 
@@ -96,3 +97,5 @@ resource "aws_route_table_association" "private_data_subnet_az2_route_table_az2_
   subnet_id      = aws_subnet.private_data_subnet_az2.id
   route_table_id = aws_route_table.private_route_table_az2.id
 }
+
+*/
