@@ -94,3 +94,11 @@ variable "multi_az_deployment" {
   description = "create a standby db instance"
 
 }
+
+#application load balancer variables
+variable "ssl_certificate_arn" {
+  default     =""
+  type        = string
+  description = "ssl certificate arn"
+
+}
